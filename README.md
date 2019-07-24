@@ -1,6 +1,7 @@
 # CFXGB : Cascaded Forest and XGBoost Classifier
 
-This is a supervised machine learning model created by Surya Dheeshjith and Thejas Gubbi Sadashiva. The model is based on paper [1]. CFXGB is an extension of the model proposed in [2]
+This is a supervised machine learning model created by Surya Dheeshjith and Thejas Gubbi Sadashiva. The model is based on paper [1]. CFXGB is an extension of the model proposed in [2]. 
+Implementation of code for cascaded forest has been used from https://github.com/kingfengji/gcForest.
 
 Model implementation done in python2.7
 
@@ -19,7 +20,7 @@ We have included demo code for execution and a detailed explanation of how you c
 
 ```python2 Main.py -d Kad -p DefaultParameters.json```
 
-### How to run code
+### How to run code for different dataset and model parameters
 
 ```python2 Main.py -d <Dataset_Name> -p <Parameter_list>.json```
 
