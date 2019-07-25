@@ -4,6 +4,8 @@ This is a supervised machine learning model created by Surya Dheeshjith and Thej
 Implementation of code for cascaded forest has been taken from https://github.com/kingfengji/gcForest.
 
 
+Implementation done in Python 3.
+
 For more details, contact Surya Dheeshjith : surya.dheeshjith@gmail.com (or) Thejas Gubbi Sadashiva : tgs001@fiu.edu
                  
 ### References
@@ -24,13 +26,11 @@ We have included demo code for execution and a detailed explanation of how you c
 ### Requirements
 
 All required packages are in requirements.txt
-Run this code to install packages in command line.
 
-```python2 -m pip install -r requirements.txt```
 
 ### Running demo code
 
-```python2 Main.py -d Kad -p DefaultParameters.json```
+```python Main.py -d Kad -p DefaultParameters.json```
 
 ### List of Command-line Parameters
 
@@ -54,7 +54,7 @@ Run this code to install packages in command line.
 
 ### How to run code for different datasets and model parameters
 
-```python2 Main.py -d <Dataset_Name> -p <Parameter_list>.json```
+```python Main.py -d <Dataset_Name> -p <Parameter_list>.json```
 
 
 
