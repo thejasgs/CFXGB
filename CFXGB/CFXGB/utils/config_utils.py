@@ -11,23 +11,7 @@ def load_json(path):
     return json.loads("\n".join(lines))
 
 def get_config_value(config, key, default_value, value_types, required=False, config_name=None):
-    """
-
-    Parameters
-    ----------
-    config: dict
-        Config dictionary
-    key: str
-        Config's key
-    default_value: str
-        Default value when key is absent in config
-    value_types: Type or List of Types
-       if not None, should check value belongs one value_types
-    required: bool
-        if the key is required in config
-    config_name: str
-        used for debug
-    """
+    
     if config_name is not None:
         log_prefix = "[{}] ".format(config_name)
     else:
