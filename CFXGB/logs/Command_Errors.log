@@ -277,3 +277,9 @@ group_starts=[0]
 group_ends=[13]
 X_train.shape=(800, 13),X_test.shape=(0, 13)
 [layer=0] X_cur_train.shape=(800, 13), X_cur_test.shape=(0, 13)
+X_groups_train.shape=[(800, 13)],y_train.shape=(800,),X_groups_test.shape=no_test,y_test.shape=no_test
+group_dims=[13]
+group_starts=[0]
+group_ends=[13]
+X_train.shape=(800, 13),X_test.shape=(0, 13)
+[layer=0] X_cur_train.shape=(800, 13), X_cur_test.shape=(0, 13)
