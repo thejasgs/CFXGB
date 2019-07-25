@@ -35,19 +35,19 @@ Run this code to install packages in command line.
 
 ### List of Command-line Parameters
 
--h --help : List the parameters and their use. 
+* -h --help : List the parameters and their use. 
 
--d --dataset : A dataset must be considered for learning. This parameter takes the dataset csv file name. This parameter **must** be passed.    
+* -d --dataset : A dataset must be considered for learning. This parameter takes the dataset csv file name. This parameter **must** be passed.    
 
--p --parameters : Model Parameters are passed using a json file. This parameter must be used to specify the name of json file. This parameter **must** be passed.  
+* -p --parameters : Model Parameters are passed using a json file. This parameter must be used to specify the name of json file. This parameter **must** be passed.  
 
--i --ignore : Ignore the first column. (For some cases).   
+* -i --ignore : Ignore the first column. (For some cases).   
 
--r --randomsamp : Balance the dataset using random under sampling. (Use for imbalanced datasets).   
+* -r --randomsamp : Balance the dataset using random under sampling. (Use for imbalanced datasets).   
 
--v --parentvaluecols [ BETA ]: Addition of columns based on values of parent nodes in decision tree. Default = False
+* -v --parentvaluecols [ BETA ]: Addition of columns based on values of parent nodes in decision tree. Default = False
 
--c --cores [ BETA ]: Number of cores to be used during addition of columns (When -v is True). Default = -1 (All cores)
+* -c --cores [ BETA ]: Number of cores to be used during addition of columns (When -v is True). Default = -1 (All cores)
 
 ### How to run code for different dataset and model parameters
 
