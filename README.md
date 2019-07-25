@@ -27,6 +27,12 @@ We have included demo code for execution and a detailed explanation of how you c
 
 All required packages are in requirements.txt
 
+```pip install -r requirements.txt```
+
+*If facing issues downloading xgboost package, use conda*
+
+*```conda install py-xgboost```*
+
 
 ### Running demo code
 
