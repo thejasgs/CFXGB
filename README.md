@@ -53,7 +53,7 @@ Run this code to install packages in command line.
 * -c --cores [ BETA ]: Number of cores to be used during addition of columns (When -v is True).    
                          Default = -1 (All cores)
 
-### How to run code for different dataset and model parameters
+### How to run code for different datasets and model parameters
 
 ```python2 Main.py -d <Dataset_Name> -p <Parameter_list>.json```
 
