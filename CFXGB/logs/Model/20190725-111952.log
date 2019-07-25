@@ -1,0 +1,21 @@
+X_groups_train.shape=[(800, 13)],y_train.shape=(800,),X_groups_test.shape=no_test,y_test.shape=no_test
+group_dims=[13]
+group_starts=[0]
+group_ends=[13]
+X_train.shape=(800, 13),X_test.shape=(0, 13)
+[layer=0] look_indexs=[0], X_cur_train.shape=(800, 13), X_cur_test.shape=(0, 13)
+Accuracy(layer_0 - estimator_0 - 5_folds.train_0.predict)=96.27%
+Accuracy(layer_0 - estimator_0 - 5_folds.train_1.predict)=95.65%
+Accuracy(layer_0 - estimator_0 - 5_folds.train_2.predict)=93.75%
+Accuracy(layer_0 - estimator_0 - 5_folds.train_3.predict)=96.23%
+Accuracy(layer_0 - estimator_0 - 5_folds.train_4.predict)=96.86%
+Accuracy(layer_0 - estimator_0 - 5_folds.train_cv.predict)=95.75%
+Accuracy(layer_0 - estimator_1 - 5_folds.train_0.predict)=96.27%
+Accuracy(layer_0 - estimator_1 - 5_folds.train_1.predict)=96.27%
+Accuracy(layer_0 - estimator_1 - 5_folds.train_2.predict)=95.00%
+Accuracy(layer_0 - estimator_1 - 5_folds.train_3.predict)=93.08%
+Accuracy(layer_0 - estimator_1 - 5_folds.train_4.predict)=93.08%
+Accuracy(layer_0 - estimator_1 - 5_folds.train_cv.predict)=94.75%
+Accuracy(layer_0 - estimator_2 - 5_folds.train_0.predict)=96.27%
+Accuracy(layer_0 - estimator_2 - 5_folds.train_1.predict)=97.52%
+Accuracy(layer_0 - estimator_2 - 5_folds.train_2.predict)=96.25%
