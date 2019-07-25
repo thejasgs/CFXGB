@@ -3,7 +3,6 @@
 This is a supervised machine learning model created by Surya Dheeshjith and Thejas Gubbi Sadashiva. The model is based on paper [1]. CFXGB is an extension of the model proposed in [2]. 
 Implementation of code for cascaded forest has been taken from https://github.com/kingfengji/gcForest.
 
-Model implementation done in python 2.7
 
 For more details, contact Surya Dheeshjith : surya.dheeshjith@gmail.com (or) Thejas Gubbi Sadashiva : tgs001@fiu.edu
                  
