@@ -30,7 +30,7 @@ All required packages are in requirements.txt
 
 ```pip install -r requirements.txt```
 
-*If facing issues downloading xgboost package, use conda*
+*If facing issues downloading xgboost package, use this conda command*
 
 *```conda install py-xgboost```*
 
