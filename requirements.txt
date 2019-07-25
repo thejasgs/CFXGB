@@ -2,11 +2,9 @@ numpy
 pandas
 argparse
 joblib
-keras
 psutil
 scikit-learn>=0.18.1
+imblearn
 scipy
 simplejson
-tensorflow
-py-xgboost
-
+xgboost
