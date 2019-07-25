@@ -24,9 +24,14 @@ In IJCAI-2017. (https://arxiv.org/abs/1702.08835v2 )
 
 We have included demo code for execution and a detailed explanation of how you can use your own dataset with custom model parameters.
 
+
+![Pipeline](/images/Pipeline3.png)
+
+
+
 ### Requirements
 
-All required packages are in requirements.txt
+* All required packages are in requirements.txt
 
 ```pip install -r requirements.txt```
 
@@ -34,6 +39,13 @@ All required packages are in requirements.txt
 
 *```conda install py-xgboost```*
 
+* Datasets to download -   
+
+  - TalkingData : https://www.kaggle.com/c/talkingdata-adtracking-fraud-detection
+  - Avazu : https://www.kaggle.com/c/avazu-ctr-prediction/data
+  - Kad : https://www.kaggle.com/tbyrnes/advertising/data
+  - UNSW : https://www.unsw.adfa.edu.au/unsw-canberra-cyber/cybersecurity/ADFA-NB15-Datasets/
+  - CICID : https://www.unb.ca/cic/datasets/ids-2017.html
 
 ### Running demo code
 
