@@ -41,13 +41,17 @@ Run this code to install packages in command line.
 
 * -p --parameters : Model Parameters are passed using a json file. This parameter must be used to specify the name of json file. This parameter **must** be passed.  
 
-* -i --ignore : Ignore the first column. (For some cases).   
+* -i --ignore : Ignore the first column. (For some cases).  
+                Default = False
 
 * -r --randomsamp : Balance the dataset using random under sampling. (Use for imbalanced datasets).   
+                    Default = False
 
-* -v --parentvaluecols [ BETA ]: Addition of columns based on values of parent nodes in decision tree. Default = False
+* -v --parentvaluecols [ BETA ]: Addition of columns based on values of parent nodes in decision tree.    
+                                Default = False
 
-* -c --cores [ BETA ]: Number of cores to be used during addition of columns (When -v is True). Default = -1 (All cores)
+* -c --cores [ BETA ]: Number of cores to be used during addition of columns (When -v is True).    
+                         Default = -1 (All cores)
 
 ### How to run code for different dataset and model parameters
 
