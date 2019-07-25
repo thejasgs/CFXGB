@@ -3,7 +3,7 @@
 This is a supervised machine learning model created by Surya Dheeshjith and Thejas Gubbi Sadashiva. The model is based on paper [1]. CFXGB is an extension of the model proposed in [2]. 
 Implementation of code for cascaded forest has been taken from https://github.com/kingfengji/gcForest.
 
-Model implementation done in python2.7
+Model implementation done in python 2.7
 
 For more details, contact Surya Dheeshjith : surya.dheeshjith@gmail.com (or) Thejas Gubbi Sadashiva : tgs001@fiu.edu
                  
@@ -30,7 +30,11 @@ We have included demo code for execution and a detailed explanation of how you c
 
 -i --ignore : Ignore the first column. (For some cases).   
 
--r --randomsamp : Balance the dataset using random under sampling. (Use for imbalanced datasets).    
+-r --randomsamp : Balance the dataset using random under sampling. (Use for imbalanced datasets).   
+
+-v --parentvaluecols [ BETA ]: Addition of columns based on values of parent nodes in decision tree. Default = False
+
+-c --cores [ BETA ]: Number of cores to be used during addition of columns (When -v is True). Default = -1 (All cores)
 
 ### How to run code for different dataset and model parameters
 
