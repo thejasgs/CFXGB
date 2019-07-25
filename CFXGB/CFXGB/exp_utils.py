@@ -79,32 +79,6 @@ def prec_rf(n_trees, X_train, y_train, X_test, y_test):
     LOGGER.info('prec_rf{}={:.6f}%'.format(n_trees, prec*100.0))
     return clf, y_pred
 
-def xgb_eval_accuracy(y_pred_proba, y_true):
-    """
-    y_true (DMatrix)
-    """
-    y_pred = np.argmax(y_pred_proba, axis=1)
-    y_true = y_true.get_label()
-    acc = float(np.sum(y_pred == y_true)) / len(y_pred)
-    return 'accuracy', -acc
-
-def prec_xgb(n_trees, max_depth, X_train, y_train, X_test, y_test, learning_rate=0.1):
-    """
-    ExtraTrees
-    """
-    import xgboost as xgb
-    X_train = X_train.reshape((X_train.shape[0], -1))
-    X_test = X_test.reshape((X_test.shape[0], -1))
-    LOGGER.info('start predict: n_trees={},X_train.shape={},y_train.shape={},X_test.shape={},y_test.shape={}'.format(
-        n_trees, X_train.shape, y_train.shape, X_test.shape, y_test.shape))
-    clf = xgb.XGBClassifier(n_estimators=n_trees, max_depth=max_depth, objective='multi:softprob',
-            seed=0, silent=True, nthread=-1, learning_rate=learning_rate)
-    eval_set = [(X_test, y_test)]
-    clf.fit(X_train, y_train, eval_set=eval_set, eval_metric="merror")
-    y_pred = clf.predict(X_test)
-    prec = float(np.sum(y_pred == y_test)) / len(y_test)
-    LOGGER.info('prec_xgb_{}={:.6f}%'.format(n_trees, prec*100.0))
-    return clf, y_pred
 
 def prec_log(X_train, y_train, X_test, y_test):
     from sklearn.linear_model import LogisticRegression

@@ -51,12 +51,6 @@ class CascadeClassifier(object):
             Number of classes
         est_configs:
             List of CVEstimator's config
-        look_indexs_cycle (list 2d): default=None
-            specification for layer i, look for the array in look_indexs_cycle[i % len(look_indexs_cycle)]
-            defalut = None <=> [range(n_groups)]
-            .e.g.
-                look_indexs_cycle = [[0,1],[2,3],[0,1,2,3]]
-                means layer 1 look for the grained 0,1; layer 2 look for grained 2,3; layer 3 look for every grained, and layer 4 cycles back as layer 1
         data_save_rounds: int [default=0]
         data_save_dir: str [default=None]
             each data_save_rounds save the intermidiate results in data_save_dir
@@ -67,7 +61,6 @@ class CascadeClassifier(object):
         self.max_layers = self.get_value("max_layers", 0, int)
         self.n_classes = self.get_value("n_classes", None, int, required=True)
         self.est_configs = self.get_value("estimators", None, list, required=True)
-        self.look_indexs_cycle = self.get_value("look_indexs_cycle", None, list)
         self.random_state = self.get_value("random_state", None, int)
         # self.data_save_dir = self.get_value("data_save_dir", None, basestring)
         self.data_save_dir = ca_config.get("data_save_dir", None)
@@ -113,20 +106,7 @@ class CascadeClassifier(object):
             random_state = None
         return get_estimator_kfold(est_name, n_folds, est_type, est_args, self.args,random_state=random_state)
 
-    def _check_look_indexs_cycle(self, X_groups, is_fit):
-        # check look_indexs_cycle
-        n_groups = len(X_groups)
-        if is_fit and self.look_indexs_cycle is None:
-            look_indexs_cycle = [list(range(n_groups))]
-        else:
-            look_indexs_cycle = self.look_indexs_cycle
-            for look_indexs in look_indexs_cycle:
-                if np.max(look_indexs) >= n_groups or np.min(look_indexs) < 0 or len(look_indexs) == 0:
-                    raise ValueError("look_indexs doesn't match n_groups!!! look_indexs={}, n_groups={}".format(
-                        look_indexs, n_groups))
-        if is_fit:
-            self.look_indexs_cycle = look_indexs_cycle
-        return look_indexs_cycle
+#
 
     def _check_group_dims(self, X_groups, is_fit):
         if is_fit:
@@ -170,10 +150,6 @@ class CascadeClassifier(object):
             [xr.shape for xr in X_groups_train], y_train.shape,
             [xt.shape for xt in X_groups_test] if is_eval_test else "no_test", y_test.shape if is_eval_test else "no_test"))
 
-        # check look_indexs_cycle
-        look_indexs_cycle = self._check_look_indexs_cycle(X_groups_train, True)
-        if is_eval_test:
-            self._check_look_indexs_cycle(X_groups_test, False)
 
         # check groups dimension
         group_starts, group_ends, group_dims, X_train = self._check_group_dims(X_groups_train, True)
@@ -241,15 +217,12 @@ class CascadeClassifier(object):
                         j1 = np.zeros((n_trains,self.n_estimators_1-1),dtype=np.float32)
                 
 
-                # Stack data that current layer needs in to X_cur
-                look_indexs = look_indexs_cycle[layer_id % len(look_indexs_cycle)]
-                for _i, i in enumerate(look_indexs):
-            
-                    X_cur_train = np.hstack((X_cur_train, X_train[:, group_starts[i]:group_ends[i]]))
-                    X_cur_test = np.hstack((X_cur_test, X_test[:, group_starts[i]:group_ends[i]]))
                 
-                LOGGER.info("[layer={}] look_indexs={}, X_cur_train.shape={}, X_cur_test.shape={}".format(
-                    layer_id, look_indexs, X_cur_train.shape, X_cur_test.shape))
+                X_cur_train = np.hstack((X_cur_train, X_train[:, group_starts[0]:group_ends[0]]))
+                X_cur_test = np.hstack((X_cur_test, X_test[:, group_starts[0]:group_ends[0]]))
+                
+                LOGGER.info("[layer={}] X_cur_train.shape={}, X_cur_test.shape={}".format(
+                    layer_id, X_cur_train.shape, X_cur_test.shape))
 
                     
                 # Fit on X_cur, predict to update X_proba
@@ -345,9 +318,7 @@ class CascadeClassifier(object):
         if not type(X_groups_test) == list:
             X_groups_test = [X_groups_test]
         LOGGER.info("X_groups_test.shape={}".format([xt.shape for xt in X_groups_test]))
-        # check look_indexs_cycle
-        look_indexs_cycle = self._check_look_indexs_cycle(X_groups_test, False)
-        # check group_dims
+        
         group_starts, group_ends, group_dims, X_test = self._check_group_dims(X_groups_test, False)
         LOGGER.info("group_dims={}".format(group_dims))
         LOGGER.info("X_test.shape={}".format(X_test.shape))
@@ -374,10 +345,9 @@ class CascadeClassifier(object):
                     j0 = np.zeros((n_tests,self.n_estimators_1-1),dtype=np.float32)
                     j1 = np.zeros((n_tests,self.n_estimators_1-1),dtype=np.float32)
 
-            # Stack data that current layer needs in to X_cur
-            look_indexs = look_indexs_cycle[layer_id % len(look_indexs_cycle)]
-            for _i, i in enumerate(look_indexs):
-                X_cur_test = np.hstack((X_cur_test, X_test[:, group_starts[i]:group_ends[i]]))
+        
+            
+            X_cur_test = np.hstack((X_cur_test, X_test[:, group_starts[0]:group_ends[0]]))
             LOGGER.info("[layer={}] X_cur_test.shape={}".format(
                 layer_id, X_cur_test.shape))
             for ei, est_config in enumerate(self.est_configs):
