@@ -24,6 +24,11 @@ In IJCAI-2017. (https://arxiv.org/abs/1702.08835v2 )
 
 We have included demo code for execution and a detailed explanation of how you can use your own dataset with custom model parameters.
 
+
+![Pipeline](/images/Pipeline3.png)
+
+
+
 ### Requirements
 
 * All required packages are in requirements.txt
