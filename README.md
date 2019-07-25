@@ -16,6 +16,13 @@ In IJCAI-2017. (https://arxiv.org/abs/1702.08835v2 )
 
 We have included demo code for execution and a detailed explanation of how you can use your own dataset with custom model parameters.
 
+### Requirements
+
+All required packages are in requirements.txt
+Run this code to install packages in command line.
+
+```python2 -m pip install -r requirements.txt```
+
 ### Running demo code
 
 ```python2 Main.py -d Kad -p DefaultParameters.json```
