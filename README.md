@@ -30,7 +30,7 @@ All required packages are in requirements.txt
 
 ```pip install -r requirements.txt```
 
-*If facing issues downloading xgboost package, use conda*
+*If facing issues downloading xgboost package, use this conda command*
 
 *```conda install py-xgboost```*
 
@@ -53,7 +53,7 @@ All required packages are in requirements.txt
 * -r --randomsamp : Balance the dataset using random under sampling. (Use for imbalanced datasets).   
                     Default = False
 
-* -v --parentvaluecols [ BETA ]: Addition of columns based on values of parent nodes in decision tree.    
+* -v --parentvaluecols [ BETA ]: Addition of columns based on class distributions of parents of leaf nodes in the decision tree.    
                                 Default = False
 
 * -c --cores [ BETA ]: Number of cores to be used during addition of columns (When -v is True).    
