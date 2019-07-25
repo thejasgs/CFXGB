@@ -12,6 +12,9 @@ For more details, contact Surya Dheeshjith : surya.dheeshjith@gmail.com (or) The
 [2]  Z.-H. Zhou and J. Feng. Deep Forest: Towards an Alternative to Deep Neural Networks.
 In IJCAI-2017. (https://arxiv.org/abs/1702.08835v2 )
 
+
+##### Version 1.1
+
 ## Details
 
 We have included demo code for execution and a detailed explanation of how you can use your own dataset with custom model parameters.
