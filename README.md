@@ -15,7 +15,7 @@ In IJCAI-2017. (https://arxiv.org/abs/1702.08835v2 )
 
 ### Version 1.1
 
-Added "New column" functionality
+* Added "New column" functionality
 
 
 ## Details
