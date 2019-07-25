@@ -1,0 +1,261 @@
+X_groups_train.shape=[(800, 13)],y_train.shape=(800,),X_groups_test.shape=no_test,y_test.shape=no_test
+group_dims=[13]
+group_starts=[0]
+group_ends=[13]
+X_train.shape=(800, 13),X_test.shape=(0, 13)
+[layer=0] look_indexs=[0], X_cur_train.shape=(800, 13), X_cur_test.shape=(0, 13)
+Accuracy(layer_0 - train.classifier_average)=95.88%
+[layer=1] look_indexs=[0], X_cur_train.shape=(800, 23), X_cur_test.shape=(0, 23)
+Accuracy(layer_1 - train.classifier_average)=96.25%
+[layer=2] look_indexs=[0], X_cur_train.shape=(800, 23), X_cur_test.shape=(0, 23)
+Accuracy(layer_2 - train.classifier_average)=96.12%
+[layer=3] look_indexs=[0], X_cur_train.shape=(800, 23), X_cur_test.shape=(0, 23)
+Accuracy(layer_3 - train.classifier_average)=96.50%
+[layer=4] look_indexs=[0], X_cur_train.shape=(800, 23), X_cur_test.shape=(0, 23)
+Accuracy(layer_4 - train.classifier_average)=96.38%
+[layer=5] look_indexs=[0], X_cur_train.shape=(800, 23), X_cur_test.shape=(0, 23)
+Accuracy(layer_5 - train.classifier_average)=96.25%
+[layer=6] look_indexs=[0], X_cur_train.shape=(800, 23), X_cur_test.shape=(0, 23)
+Accuracy(layer_6 - train.classifier_average)=95.88%
+[Result][Optimal Level Detected] opt_layer_num=4, accuracy_train=96.50%
+X_groups_test.shape=[(200, 13)]
+group_dims=[13]
+X_test.shape=(200, 13)
+[layer=0] X_cur_test.shape=(200, 13)
+[layer=1] X_cur_test.shape=(200, 23)
+[layer=2] X_cur_test.shape=(200, 23)
+[layer=3] X_cur_test.shape=(200, 23)
+X_groups_train.shape=[(800, 12)],y_train.shape=(800,),X_groups_test.shape=no_test,y_test.shape=no_test
+group_dims=[12]
+group_starts=[0]
+group_ends=[12]
+X_train.shape=(800, 12),X_test.shape=(0, 12)
+[layer=0] look_indexs=[0], X_cur_train.shape=(800, 12), X_cur_test.shape=(0, 12)
+Accuracy(layer_0 - train.classifier_average)=95.75%
+[layer=1] look_indexs=[0], X_cur_train.shape=(800, 30), X_cur_test.shape=(0, 22)
+Accuracy(layer_1 - train.classifier_average)=96.00%
+[layer=2] look_indexs=[0], X_cur_train.shape=(800, 30), X_cur_test.shape=(0, 22)
+Accuracy(layer_2 - train.classifier_average)=95.25%
+[layer=3] look_indexs=[0], X_cur_train.shape=(800, 30), X_cur_test.shape=(0, 22)
+Accuracy(layer_3 - train.classifier_average)=95.50%
+[layer=4] look_indexs=[0], X_cur_train.shape=(800, 30), X_cur_test.shape=(0, 22)
+Accuracy(layer_4 - train.classifier_average)=95.38%
+[Result][Optimal Level Detected] opt_layer_num=2, accuracy_train=96.00%
+X_groups_test.shape=[(200, 12)]
+group_dims=[12]
+X_test.shape=(200, 12)
+[layer=0] X_cur_test.shape=(200, 12)
+[layer=1] X_cur_test.shape=(200, 30)
+X_groups_train.shape=[(800, 13)],y_train.shape=(800,),X_groups_test.shape=no_test,y_test.shape=no_test
+group_dims=[13]
+group_starts=[0]
+group_ends=[13]
+X_train.shape=(800, 13),X_test.shape=(0, 13)
+[layer=0] look_indexs=[0], X_cur_train.shape=(800, 13), X_cur_test.shape=(0, 13)
+X_groups_train.shape=[(800, 12)],y_train.shape=(800,),X_groups_test.shape=no_test,y_test.shape=no_test
+group_dims=[12]
+group_starts=[0]
+group_ends=[12]
+X_train.shape=(800, 12),X_test.shape=(0, 12)
+[layer=0] look_indexs=[0], X_cur_train.shape=(800, 12), X_cur_test.shape=(0, 12)
+X_groups_train.shape=[(800, 13)],y_train.shape=(800,),X_groups_test.shape=no_test,y_test.shape=no_test
+group_dims=[13]
+group_starts=[0]
+group_ends=[13]
+X_train.shape=(800, 13),X_test.shape=(0, 13)
+[layer=0] look_indexs=[0], X_cur_train.shape=(800, 13), X_cur_test.shape=(0, 13)
+Accuracy(layer_0 - train.classifier_average)=96.12%
+[layer=1] look_indexs=[0], X_cur_train.shape=(800, 23), X_cur_test.shape=(0, 23)
+Accuracy(layer_1 - train.classifier_average)=95.25%
+[layer=2] look_indexs=[0], X_cur_train.shape=(800, 23), X_cur_test.shape=(0, 23)
+X_groups_train.shape=[(784, 13)],y_train.shape=(784,),X_groups_test.shape=no_test,y_test.shape=no_test
+group_dims=[13]
+group_starts=[0]
+group_ends=[13]
+X_train.shape=(784, 13),X_test.shape=(0, 13)
+[layer=0] look_indexs=[0], X_cur_train.shape=(784, 13), X_cur_test.shape=(0, 13)
+Accuracy(layer_0 - train.classifier_average)=95.79%
+[layer=1] look_indexs=[0], X_cur_train.shape=(784, 23), X_cur_test.shape=(0, 23)
+Accuracy(layer_1 - train.classifier_average)=95.66%
+[layer=2] look_indexs=[0], X_cur_train.shape=(784, 23), X_cur_test.shape=(0, 23)
+X_groups_train.shape=[(784, 13)],y_train.shape=(784,),X_groups_test.shape=no_test,y_test.shape=no_test
+group_dims=[13]
+group_starts=[0]
+group_ends=[13]
+X_train.shape=(784, 13),X_test.shape=(0, 13)
+[layer=0] look_indexs=[0], X_cur_train.shape=(784, 13), X_cur_test.shape=(0, 13)
+Accuracy(layer_0 - train.classifier_average)=96.05%
+[layer=1] look_indexs=[0], X_cur_train.shape=(784, 23), X_cur_test.shape=(0, 23)
+Accuracy(layer_1 - train.classifier_average)=95.41%
+[layer=2] look_indexs=[0], X_cur_train.shape=(784, 23), X_cur_test.shape=(0, 23)
+Accuracy(layer_2 - train.classifier_average)=95.66%
+[layer=3] look_indexs=[0], X_cur_train.shape=(784, 23), X_cur_test.shape=(0, 23)
+Accuracy(layer_3 - train.classifier_average)=95.41%
+[Result][Optimal Level Detected] opt_layer_num=1, accuracy_train=96.05%
+X_groups_test.shape=[(200, 13)]
+group_dims=[13]
+X_test.shape=(200, 13)
+[layer=0] X_cur_test.shape=(200, 13)
+X_groups_train.shape=[(784, 13)],y_train.shape=(784,),X_groups_test.shape=no_test,y_test.shape=no_test
+group_dims=[13]
+group_starts=[0]
+group_ends=[13]
+X_train.shape=(784, 13),X_test.shape=(0, 13)
+[layer=0] look_indexs=[0], X_cur_train.shape=(784, 13), X_cur_test.shape=(0, 13)
+Accuracy(layer_0 - train.classifier_average)=95.41%
+[layer=1] look_indexs=[0], X_cur_train.shape=(784, 23), X_cur_test.shape=(0, 23)
+X_groups_train.shape=[(784, 13)],y_train.shape=(784,),X_groups_test.shape=no_test,y_test.shape=no_test
+group_dims=[13]
+group_starts=[0]
+group_ends=[13]
+X_train.shape=(784, 13),X_test.shape=(0, 13)
+[layer=0] look_indexs=[0], X_cur_train.shape=(784, 13), X_cur_test.shape=(0, 13)
+Accuracy(layer_0 - train.classifier_average)=96.17%
+[layer=1] look_indexs=[0], X_cur_train.shape=(784, 23), X_cur_test.shape=(0, 23)
+Accuracy(layer_1 - train.classifier_average)=95.41%
+[layer=2] look_indexs=[0], X_cur_train.shape=(784, 23), X_cur_test.shape=(0, 23)
+Accuracy(layer_2 - train.classifier_average)=95.54%
+[layer=3] look_indexs=[0], X_cur_train.shape=(784, 23), X_cur_test.shape=(0, 23)
+Accuracy(layer_3 - train.classifier_average)=95.54%
+[Result][Optimal Level Detected] opt_layer_num=1, accuracy_train=96.17%
+X_groups_test.shape=[(200, 13)]
+group_dims=[13]
+X_test.shape=(200, 13)
+[layer=0] X_cur_test.shape=(200, 13)
+X_groups_train.shape=[(784, 13)],y_train.shape=(784,),X_groups_test.shape=no_test,y_test.shape=no_test
+group_dims=[13]
+group_starts=[0]
+group_ends=[13]
+X_train.shape=(784, 13),X_test.shape=(0, 13)
+[layer=0] look_indexs=[0], X_cur_train.shape=(784, 13), X_cur_test.shape=(0, 13)
+X_groups_train.shape=[(784, 13)],y_train.shape=(784,),X_groups_test.shape=no_test,y_test.shape=no_test
+group_dims=[13]
+group_starts=[0]
+group_ends=[13]
+X_train.shape=(784, 13),X_test.shape=(0, 13)
+[layer=0] look_indexs=[0], X_cur_train.shape=(784, 13), X_cur_test.shape=(0, 13)
+X_groups_train.shape=[(784, 13)],y_train.shape=(784,),X_groups_test.shape=no_test,y_test.shape=no_test
+group_dims=[13]
+group_starts=[0]
+group_ends=[13]
+X_train.shape=(784, 13),X_test.shape=(0, 13)
+[layer=0] look_indexs=[0], X_cur_train.shape=(784, 13), X_cur_test.shape=(0, 13)
+Accuracy(layer_0 - train.classifier_average)=95.92%
+[layer=1] look_indexs=[0], X_cur_train.shape=(784, 23), X_cur_test.shape=(0, 23)
+Accuracy(layer_1 - train.classifier_average)=95.41%
+[layer=2] look_indexs=[0], X_cur_train.shape=(784, 23), X_cur_test.shape=(0, 23)
+Accuracy(layer_2 - train.classifier_average)=95.15%
+[layer=3] look_indexs=[0], X_cur_train.shape=(784, 23), X_cur_test.shape=(0, 23)
+Accuracy(layer_3 - train.classifier_average)=95.79%
+[Result][Optimal Level Detected] opt_layer_num=1, accuracy_train=95.92%
+X_groups_test.shape=[(200, 13)]
+group_dims=[13]
+X_test.shape=(200, 13)
+[layer=0] X_cur_test.shape=(200, 13)
+X_groups_train.shape=[(784, 13)],y_train.shape=(784,),X_groups_test.shape=no_test,y_test.shape=no_test
+group_dims=[13]
+group_starts=[0]
+group_ends=[13]
+X_train.shape=(784, 13),X_test.shape=(0, 13)
+[layer=0] look_indexs=[0], X_cur_train.shape=(784, 13), X_cur_test.shape=(0, 13)
+Accuracy(layer_0 - train.classifier_average)=96.05%
+[layer=1] look_indexs=[0], X_cur_train.shape=(784, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_1 - train.classifier_average)=96.68%
+[layer=2] look_indexs=[0], X_cur_train.shape=(784, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_2 - train.classifier_average)=96.81%
+[layer=3] look_indexs=[0], X_cur_train.shape=(784, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_3 - train.classifier_average)=96.81%
+[layer=4] look_indexs=[0], X_cur_train.shape=(784, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_4 - train.classifier_average)=96.30%
+[layer=5] look_indexs=[0], X_cur_train.shape=(784, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_5 - train.classifier_average)=95.92%
+[Result][Optimal Level Detected] opt_layer_num=3, accuracy_train=96.81%
+X_groups_test.shape=[(200, 13)]
+group_dims=[13]
+X_test.shape=(200, 13)
+[layer=0] X_cur_test.shape=(200, 13)
+X_groups_train.shape=[(784, 13)],y_train.shape=(784,),X_groups_test.shape=no_test,y_test.shape=no_test
+group_dims=[13]
+group_starts=[0]
+group_ends=[13]
+X_train.shape=(784, 13),X_test.shape=(0, 13)
+[layer=0] look_indexs=[0], X_cur_train.shape=(784, 13), X_cur_test.shape=(0, 13)
+Accuracy(layer_0 - train.classifier_average)=95.66%
+[layer=1] look_indexs=[0], X_cur_train.shape=(784, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_1 - train.classifier_average)=96.56%
+[layer=2] look_indexs=[0], X_cur_train.shape=(784, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_2 - train.classifier_average)=96.05%
+[layer=3] look_indexs=[0], X_cur_train.shape=(784, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_3 - train.classifier_average)=95.92%
+[layer=4] look_indexs=[0], X_cur_train.shape=(784, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_4 - train.classifier_average)=96.05%
+[Result][Optimal Level Detected] opt_layer_num=2, accuracy_train=96.56%
+X_groups_test.shape=[(200, 13)]
+group_dims=[13]
+X_test.shape=(200, 13)
+[layer=0] X_cur_test.shape=(200, 13)
+X_groups_train.shape=[(784, 13)],y_train.shape=(784,),X_groups_test.shape=no_test,y_test.shape=no_test
+group_dims=[13]
+group_starts=[0]
+group_ends=[13]
+X_train.shape=(784, 13),X_test.shape=(0, 13)
+[layer=0] look_indexs=[0], X_cur_train.shape=(784, 13), X_cur_test.shape=(0, 13)
+Accuracy(layer_0 - train.classifier_average)=96.05%
+[layer=1] look_indexs=[0], X_cur_train.shape=(784, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_1 - train.classifier_average)=96.17%
+[layer=2] look_indexs=[0], X_cur_train.shape=(784, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_2 - train.classifier_average)=95.92%
+[layer=3] look_indexs=[0], X_cur_train.shape=(784, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_3 - train.classifier_average)=95.79%
+[layer=4] look_indexs=[0], X_cur_train.shape=(784, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_4 - train.classifier_average)=95.15%
+[Result][Optimal Level Detected] opt_layer_num=2, accuracy_train=96.17%
+X_groups_test.shape=[(200, 13)]
+group_dims=[13]
+X_test.shape=(200, 13)
+[layer=0] X_cur_test.shape=(200, 13)
+X_groups_train.shape=[(784, 13)],y_train.shape=(784,),X_groups_test.shape=no_test,y_test.shape=no_test
+group_dims=[13]
+group_starts=[0]
+group_ends=[13]
+X_train.shape=(784, 13),X_test.shape=(0, 13)
+[layer=0] look_indexs=[0], X_cur_train.shape=(784, 13), X_cur_test.shape=(0, 13)
+Accuracy(layer_0 - train.classifier_average)=96.05%
+[layer=1] look_indexs=[0], X_cur_train.shape=(784, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_1 - train.classifier_average)=96.05%
+[layer=2] look_indexs=[0], X_cur_train.shape=(784, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_2 - train.classifier_average)=95.92%
+[layer=3] look_indexs=[0], X_cur_train.shape=(784, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_3 - train.classifier_average)=96.17%
+[layer=4] look_indexs=[0], X_cur_train.shape=(784, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_4 - train.classifier_average)=95.41%
+[layer=5] look_indexs=[0], X_cur_train.shape=(784, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_5 - train.classifier_average)=95.03%
+[layer=6] look_indexs=[0], X_cur_train.shape=(784, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_6 - train.classifier_average)=95.41%
+[Result][Optimal Level Detected] opt_layer_num=4, accuracy_train=96.17%
+X_groups_test.shape=[(200, 13)]
+group_dims=[13]
+X_test.shape=(200, 13)
+[layer=0] X_cur_test.shape=(200, 13)
+[layer=1] X_cur_test.shape=(200, 31)
+[layer=2] X_cur_test.shape=(200, 31)
+[layer=3] X_cur_test.shape=(200, 31)
+X_groups_train.shape=[(800, 13)],y_train.shape=(800,),X_groups_test.shape=no_test,y_test.shape=no_test
+group_dims=[13]
+group_starts=[0]
+group_ends=[13]
+X_train.shape=(800, 13),X_test.shape=(0, 13)
+[layer=0] look_indexs=[0], X_cur_train.shape=(800, 13), X_cur_test.shape=(0, 13)
+Accuracy(layer_0 - train.classifier_average)=96.75%
+[layer=1] look_indexs=[0], X_cur_train.shape=(800, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_1 - train.classifier_average)=96.75%
+[layer=2] look_indexs=[0], X_cur_train.shape=(800, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_2 - train.classifier_average)=96.38%
+[layer=3] look_indexs=[0], X_cur_train.shape=(800, 31), X_cur_test.shape=(0, 23)
+Accuracy(layer_3 - train.classifier_average)=96.50%
+[Result][Optimal Level Detected] opt_layer_num=1, accuracy_train=96.75%
+X_groups_test.shape=[(200, 13)]
+group_dims=[13]
+X_test.shape=(200, 13)
+[layer=0] X_cur_test.shape=(200, 13)
