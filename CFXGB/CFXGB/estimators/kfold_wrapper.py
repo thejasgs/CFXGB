@@ -32,6 +32,8 @@ class KFoldWrapper(object):
             If n_folds=1, means no K-Fold
         est_class (class):
             Class of estimator
+        args:
+            For Parallelisation
         est_args (dict):
             Arguments of estimator
         random_state (int):
@@ -122,36 +124,15 @@ class KFoldWrapper(object):
                     self.n_dims = n_dims
                     self.val_idx = val_idx
                     ls = Parallel(n_jobs=self.args.Cores, verbose=0, prefer = "threads", backend="threading")(delayed(self.extracolsTrain)(i) for i in range(len(X[val_idx].reshape((-1, n_dims)))))
-                    
-    #                print("ls shape - ")
-    #                print(np.shape(ls))
-    #
-    #                print("ls[0]  - ")
-    #                print(ls)
 
     
                     s0 = [i for i,j in ls]
                     s1 = [j for i,j in ls]
-                    
-                    """
-                    print("s0 shape - ")
-                    print(np.shape(s0))
-                    
-                    print("s0  - ")
-                    print(s0)
-                    """
+                
 
                     l0[val_idx]=s0
                     l1[val_idx] =s1
-                    """
-                    print("l0 shape - ")
-                    print(np.shape(l0))
-
-                    print("l0  - ")
-                    print(l0)
-                    """
-
-
+                
 
             # predict on k-fold validation
             y_proba = est.predict_proba(X[val_idx].reshape((-1, n_dims)), cache_dir=cache_dir)
@@ -280,14 +261,7 @@ class KFoldWrapper(object):
             except:
                 pass
         
-            """
-            print("l0 shape - ")
-            print(np.shape(l0))
-            
-            print("l0  - ")
-            print(l0)
-            """
-        
+
         if(self.args.ParentCols):
             if(esti == None):
                 return y_proba_kfolds,None,None
