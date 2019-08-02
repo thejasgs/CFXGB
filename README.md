@@ -25,7 +25,7 @@ In IJCAI-2017. (https://arxiv.org/abs/1702.08835v2 )
 We have included demo code for execution and a detailed explanation of how you can use your own dataset with custom model parameters.
 
 
-![Pipeline](/images/Pipeline3.png)
+![Pipeline](/images/Pipeline2.png)
 
 
 
