@@ -49,7 +49,7 @@ We have included demo code for execution and a detailed explanation of how you c
 
 ### Running demo code
 
-```python Main.py -d Kad -p DefaultParameters.json```
+```python3 Main.py -d Kad -p DefaultParameters.json```
 
 ### List of Command-line Parameters
 
@@ -73,7 +73,7 @@ We have included demo code for execution and a detailed explanation of how you c
 
 ### How to run code for different datasets and model parameters
 
-```python Main.py -d <Dataset_Name> -p <Parameter_list>.json```
+```python3 Main.py -d <Dataset_Name> -p <Parameter_list>.json```
 
 
 
