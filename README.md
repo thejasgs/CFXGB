@@ -11,7 +11,7 @@ For more details, contact Surya Dheeshjith : surya.dheeshjith@gmail.com (or) The
 ### References
 [1] CFXGB: An Optimized and Effective Learning Approach for Click Fraud Detection.  
 [2]  Z.-H. Zhou and J. Feng. Deep Forest: Towards an Alternative to Deep Neural Networks.
-In IJCAI-2017. (https://arxiv.org/abs/1702.08835v2 )
+In IJCAI-2017. (https://arxiv.org/abs/1702.08835v2 ) 
 
 
 ### Version 1.1
