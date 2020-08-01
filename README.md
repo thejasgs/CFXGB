@@ -83,6 +83,6 @@ The implementation of using Parent nodes in the decision trees as stated in the 
 
 ###### Coded by Surya Dheeshjith
 
-###### Last updated : 1 August 2020
+###### Last updated : 22 June 2020
 
 
