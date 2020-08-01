@@ -24,6 +24,10 @@ We have included demo code for execution and a detailed explanation of how you c
 
 ![Pipeline](/images/Pipeline2.png)
 
+The implementation of using Parent nodes in the decision trees as stated in the paper has also been implemented
+
+![Parent nodes](/images/DecisionTree4.png)
+
 
 
 ### Requirements
@@ -75,5 +79,10 @@ We have included demo code for execution and a detailed explanation of how you c
 
 
 
+
+
+###### Coded by Surya Dheeshjith
+
+###### Last updated : 1 August 2020
 
 
