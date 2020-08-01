@@ -1,2 +1,9 @@
 .DS_Store
 CFXGB/CFXGB/.DS_Store
+CFXGB/CFXGB/__pycache__
+CFXGB/CFXGB/estimators/__pycache__
+CFXGB/CFXGB/estimators/*.pyc
+CFXGB/CFXGB/utils/__pycache__
+CFXGB/CFXGB/utils/*.pyc
+CFXGB/CFXGB/cascade/__pycache__
+CFXGB/CFXGB/cascade/*.pyc

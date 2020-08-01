@@ -88,7 +88,7 @@ class CFXGB(object):
                 clf = XGBClassifier(n_estimators=100, learning_rate = l, max_depth = md,verbosity =0, random_state = 0,n_jobs=-1)
                 clf.fit(X1, y1)
                 y_p = clf.predict(X2)
-                fpr, tpr, thresholds = metrics.roc_curve(y2, y_p)
+                fpr, tpr, thresholds = metrics.roc_curve(y2, y_p,pos_label=1)
                 auc = metrics.auc(fpr, tpr)
                 if(maxauc<auc):
                     maxauc = auc
