@@ -3,7 +3,7 @@
 This is a supervised machine learning model created by Surya Dheeshjith and Thejas Gubbi Sadashiva. The model is based on paper [1]. CFXGB is an extension of the model proposed in [2]. 
 Implementation of code for cascaded forest has been taken from https://github.com/kingfengji/gcForest. 
 
-This repository also exists in this [link](https://github.com/suryadheeshjith/CFXGB) that has integrated Travis CI and Code coverage.  
+This repository also exists in this [link](https://github.com/suryadheeshjith/CFXGB) with integrated Travis CI and Code coverage.  
 
 
 Implementation done in Python 3.
