@@ -72,6 +72,7 @@ The implementation of using Parent nodes in the decision trees as stated in the 
 
 ### References
 [1] CFXGB: An Optimized and Effective Learning Approach for Click Fraud Detection. (https://www.sciencedirect.com/science/article/pii/S2666827020300165)
+
 [2]  Z.-H. Zhou and J. Feng. Deep Forest: Towards an Alternative to Deep Neural Networks.
 In IJCAI-2017. (https://arxiv.org/abs/1702.08835v2 ) 
 
