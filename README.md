@@ -6,7 +6,7 @@ Implementation of code for cascaded forest has been taken from https://github.co
 This repository also exists in this [link](https://github.com/suryadheeshjith/CFXGB) with integrated Travis CI and Code coverage.  
 
 
-Implementation done in Python 3.6.10
+Implementation done in Python 3.7.3
 
 For more details, contact Surya Dheeshjith : surya.dheeshjith@gmail.com (or) Thejas Gubbi Sadashiva : tgs001@fiu.edu
                  
