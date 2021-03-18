@@ -1,7 +1,7 @@
 # CFXGB : Cascaded Forest and XGBoost Classifier
 
 This is a supervised machine learning model created by Surya Dheeshjith and Thejas Gubbi Sadashiva. The model is based on paper [1]. CFXGB is an extension of the model proposed in [2]. 
-Implementation of code for cascaded forest has been taken from https://github.com/kingfengji/gcForest. 
+Implementation of cascaded forest is available at https://github.com/kingfengji/gcForest. 
 
 This repository also exists in this [link](https://github.com/suryadheeshjith/CFXGB) with integrated Travis CI and Code coverage.  
 
@@ -80,7 +80,6 @@ The implementation of using Parent nodes in the decision trees as stated in the 
 
 
 
-###### Coded by Surya Dheeshjith
 
 ###### Last updated : 22 June 2020
 
